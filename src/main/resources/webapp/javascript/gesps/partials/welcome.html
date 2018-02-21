@@ -1,0 +1,120 @@
+<div class="jumbotron">
+    <a href="https://github.com/gnavarro77/angular-shiro"
+       style="z-index: 10000">
+        <img alt="Fork me on GitHub"
+             src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
+             style="position: absolute; top: 0; right: 0; border: 0;">
+    </a>
+    <div class="container">
+        <div class="col-md-6">
+            <h1>Angular Shiro,</h1>
+            <h2>Address book demo application</h2>
+            <p>
+                <a class="btn btn-primary btn-lg" role="button"
+                   ng-href="https://github.com/gnavarro77/angular-shiro/tree/master/demo">View
+                    source code &raquo;</a>
+            </p>
+            <div class="well">
+                <h5>
+                    Check
+                    <code>remember me</code>
+                    to create a browser session (
+                    <code>sessionStorage</code>
+                    ) that stores the credentials.
+                </h5>
+                <h5>When a page is reloaded, credentials retrieved from the
+                    session are used to automatically login to reload authorizations
+                    and to stay on the same page.</h5>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="well">
+                <h4>ADMIN</h4>
+                <h5>
+                    Log in as
+                    <code>ADMIN</code>
+                    with the following credentials :
+                </h5>
+                <ul>
+                    <li><span><code>username</code> : admin</span></li>
+                    <li><span><code>password</code> : admin</span></li>
+                </ul>
+                <h5>and enjoy all the features of the application without
+                    limitation</h5>
+            </div>
+            <div>
+                <div class="well">
+                    <h4>GUEST</h4>
+                    <h5>
+                        Log in as
+                        <code>GUEST</code>
+                        with the following credentials :
+                    </h5>
+                    <ul>
+                        <li><span><code>username</code> : guest</span></li>
+                        <li><span><code>password</code> : guest</span></li>
+                    </ul>
+                    <h5>and enjoy a strict limitation of the available features</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="well">
+                <p>Open a web console, refresh the page and check the logs.</p>
+                <p>
+                    Filter
+                    <code>anon</code>
+                    is applied to the path
+                    <code>/login</code>
+                    in accordance with
+                    <code>angular-shiro</code>
+                    default configuration.
+                </p>
+				<pre>
+urls : {
+	'/' : 'anon',
+	'/index' : 'anon',
+	'/login' : 'anon',
+	'/signin' : 'anon',
+	'/logout' : 'logout',
+	'/signout' : 'logout'
+}
+				</pre>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="well">
+                <p>
+                    Try to type in the following path
+                    <code>/#/app</code>
+                    in your browser navigation bar.
+                </p>
+                <p>
+                    In the logs you will notice that the
+                    <code>authc</code>
+                    filter is applied and as the current
+                    <code>Subject</code>
+                    is not autenticated he is redirected to the configured
+                    <code>loginUrl</code>
+                    which is by default
+                    <code>/login</code>
+                    .
+                </p>
+                <p>To get such a behavior we had to had the following
+                    declaration :
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>

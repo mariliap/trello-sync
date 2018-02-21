@@ -1,0 +1,27 @@
+{
+  "name": "demo app",
+  "description": "Teste",
+  "version": "0.0.0",
+  "homepage": "",
+  "author": {
+    "name": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gnavarro77/angular-shiro.git"
+  },
+  "bugs": "",
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "ignore": [
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "angular-route" : "latest",
+    "angular-resource": "latest",
+    "font-awesome": "latest"
+  }
+}
