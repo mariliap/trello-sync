@@ -20,7 +20,7 @@ public class TrelloExplorer {
 
         String baseUrl = "http://gesp.cge.ce.gov.br"; //"https://news.ycombinator.com" ;
         String loginUrl = baseUrl + "/login.seam";  //"/login?goto=news" ;
-        String myApiKey = "GXeJ-kyruHDaKUhQwCAR0QMbTQ8";
+        String myApiKey = "";
         String myToken = "" ;
 
         try {
